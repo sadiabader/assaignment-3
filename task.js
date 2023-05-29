@@ -56,20 +56,20 @@ console.log(alphabet.sort());
 //  Task-5
 
 class employ {
-    constructor(name, id, subject, classs){
-        this.Name = name,
-        this.Id = id,
-        this.Subject = subject,
-        this.Classs = classs
+    constructor(fname, lname, email, id){
+        this.Fname = fname,
+        this.Lname = lname,
+        this.Email = email,
+        this.Id = id
     }
 }
 class emp1 extends employ{
-    constructor(name, id, subject, classs){
-        super(name, id, subject, classs)   
+    constructor(fname, lname, email, id){
+        super(fname, lname, email, id)
     }
 }
-let employs = new employ("Sana", 02, "Js", "c2");
-let empl = new emp1("Filza", 05, "PHp", "b2");
+let employs = new employ("Sana", "Ahmed", "abc@gmail.com", 02);
+let empl = new emp1("Filza", "Niwar", "xyz@gmail.com", 05);
 
 console.log(employs)
 console.log(empl)
